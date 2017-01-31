@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<section id="intro">
+  <a href="{{site.author.cv}}" class="logo"><img src="images/logo.svg" alt="" /></a>
+  <header>
+    <h2>Blog</h2>
+    <p>By <a href="{{site.author.cv}}">{{site.author.name}}</a></p>
+  </header>
+</section>
+<!-- Post -->
+{% for post in site.posts %} 
+  <article class="post">
+    <header>
+      <div class="title">
+      <span class="image left image-icon"><a href="/{{ post.icon }}"><img src="images/{{ post.icon }}.svg" style="border-radius: 100%; width: 4em;" alt="{{ post.icon }}"></a></span>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+        <p>{{ post.categories }}</p> 
+      </div>
+      <div class="meta">
+        <time class="published" datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        <a href="{{site.author.cv}}" class="author"><span class="name">{{ site.author.name }}</span><img src="{{site.author.avatar}}" alt="ViKapitoshka" /></a>
+      </div>
+    </header>
+    <p>{{ post.content | truncatewords: 30 }}</p>
+    <footer> 
+      <ul class="actions">
+        <li><a href="{{ post.url | relative_url }}" class="button big">Читать Далее</a></li>
+      </ul>
+      <!--
+      <ul class="stats">
+        <li><a href="#">General</a></li>
+      </ul> -->
+    </footer>
+  </article>
+{% endfor %}
+
+<!-- About -->
+  <section class="blurb">
+    <h2>О сайте</h2>
+    <p>{{ site.description }}</p>
+    <ul class="actions">
+      <li><a href="{{site.author.cv}}" class="button">автор</a></li>
+    </ul>
+  </section>

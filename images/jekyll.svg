@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<svg width="472" height="472" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+ <metadata>Created by potrace 1.13, written by Peter Selinger 2001-2015</metadata>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1" fill="#000000" transform="translate(0,472) scale(0.10000000149011612,-0.10000000149011612) ">
+   <path fill="#2ebaae" id="svg_2" d="m0,2360l0,-2360l2360,0l2360,0l0,2360l0,2360l-2360,0l-2360,0l0,-2360zm2778,2004c315,-63 692,-275 692,-387c0,-24 -17,-48 -82,-116l-83,-86l-589,-1535c-324,-844 -606,-1572 -627,-1616c-170,-360 -686,-329 -820,50c-24,70 -26,185 -5,261c8,28 283,748 612,1600l599,1550l0,128c0,164 3,167 137,167c49,0 124,-7 166,-16z"/>
+   <path fill="#2ebaae" id="svg_3" d="m2668,4269c-26,-15 -23,-24 23,-74c98,-106 464,-234 562,-196c34,13 34,31 2,69c-98,116 -498,253 -587,201z"/>
+   <path fill="#2ebaae" id="svg_4" d="m2760,2844c-78,-78 -176,-150 -245,-179c-22,-9 -94,-29 -160,-45c-150,-36 -180,-49 -265,-111c-122,-88 -156,-140 -235,-354c-12,-33 -70,-186 -130,-340c-59,-154 -131,-343 -160,-420c-29,-77 -84,-216 -121,-310c-59,-147 -68,-180 -72,-249c-6,-111 21,-177 105,-257c49,-45 76,-62 120,-75c70,-20 151,-15 219,15c58,26 136,99 158,150c27,61 865,2245 863,2247c-1,2 -36,-31 -77,-72zm-719,-1025c23,-26 25,-86 4,-115c-38,-55 -124,-51 -158,5c-22,37 -22,65 0,102c31,52 112,56 154,8z"/>
+  </g>
+  <circle id="svg_15" r="5" cy="316" cx="175" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#ffffff" fill="#ffffff"/>
+  <circle stroke="#ffffff" id="svg_16" r="2.5" cy="231.5" cx="219" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff"/>
+  <circle id="svg_17" r="4.242641" cy="251" cx="239" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#ffffff" fill="#ffffff"/>
+  <circle id="svg_18" r="2.236068" cy="363" cx="201" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#ffffff" fill="#ffffff"/>
+ </g>
+</svg>

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post">
+  <header>
+    <div class="title">
+      <h2>{{ page.title | escape }}</h2>
+      <p>{{ page.categories }}</p>
+    </div>
+    <div class="meta">
+      <time class="published" datetime="{{ page.date }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+      <a href="#" class="author"><span class="name">{{ page.author }}</span><img src="{{site.author.avatar}}" alt="ViKapitoshka" /></a>
+    </div>
+  </header>
+  {{ content }}
+  
+  <footer>
+    <ul class="stats">
+      <li><a href="{{site.url}} ">Главная</a></li>
+    </ul>
+  </footer>
+</article>
+
+
+

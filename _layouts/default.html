@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    <div id="wrapper">
+
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+      <div id="main">
+
+        {{ content }}
+        
+      </div>
+    </main>
+
+    {% include footer.html %}
+    </div>
+
+  </body>
+
+  <!-- Scripts -->
+      <script src="/assets/js/jquery.min.js"></script>
+      <script src="/assets/js/skel.min.js"></script>
+      <script src="/assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="https://cdn.rawgit.com/ViKapitoshka/jekyll-theme-future-imperfect/cb080feb/assets/js/main.js"></script>
+
+</html>
