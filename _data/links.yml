@@ -1,3 +1,6 @@
 # blog page sections
 - name: JQuery
   href: '/jquery/'
+
+- name: LIFE
+  href: '/life'
