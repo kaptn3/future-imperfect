@@ -3,7 +3,12 @@
 
   {% include head.html %}
 
-  <body>
+  {% if page.title %}
+    <body class="single">
+  {% else %}
+    <body>
+  {% endif %}  
+
 
     <div id="wrapper">
 
@@ -11,13 +16,14 @@
 
     <main class="page-content" aria-label="Content">
       <div id="main">
-
-        {{ content }}
-        
+        {{ content }}        
       </div>
     </main>
-
-    {% include footer.html %}
+    {% if page.title %}
+     {% include footer.html %}
+    {% else %}
+      {% include index-footer.html %}
+    {% endif %}    
     </div>
 
   </body>

@@ -1,39 +1,35 @@
 <!-- categories.html -->
 
 {% assign category = page.url | remove:'/' | capitalize %} <!-- category - переменная из адреса сайта -->
-<section id="intro">
-  <header>
-    <h2>{{ category }}</h2>
+    <header>
+        <h1 class="cat-header" style="text-align: center;">{{category}}</h1>
+    </header>
+
     <style>
-    	h2:after {
-    		background: #2ebaae;
-    		content: '';
-    		display: block;
-    		height: 2px;
-    		margin: 0.75em auto 0 auto;
-    		position: relative;
-    		width: 4em;
-			}
+        .cat-header:after {
+            background: #2ebaae;
+            content: '';
+            display: block;
+            height: 2px;
+            margin: 0.75em auto 0 auto;
+            position: relative;
+            width: 4em;
+            }
     </style>
-  </header>
-</section>
 
 
 <section>
-
-<ul class="posts">
-	{% for post in site.categories.[category] %}
-	<li>
-		<article>
-			<header>
-				<h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
-					<time class="published" datetime="2015-10-20">{{post.date | date: "%d-%m-%Y"}}</time>
-			</header>
-			<a href="#" class="image"><img src="../images/{{post.icon}}.svg" alt="" /></a>
-		</article>		
-	</li>
-	{% endfor %}
-
-</ul>
-
+    <ul class="posts">
+    	{% for post in site.categories.[category] %}
+    	<li>
+    		<article>
+    			<header>
+    				<h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
+    					<time class="published" datetime="2015-10-20">{{post.date | date: "%d-%m-%Y"}}</time>
+    			</header>
+    			<a href="#" class="image"><img src="/images/{{post.icon}}.svg" alt="" /></a>
+    		</article>		
+    	</li>
+    	{% endfor %}
+    </ul>
 </section>
