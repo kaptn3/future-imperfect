@@ -31,6 +31,7 @@ author:
   email: kapitonenko.vick@ya.ru
   vk_id: id201664979
   telegram_name: vikapitoshka 
+  logo: '/images/logo.svg'
 
 # Build settings
 markdown: kramdown
