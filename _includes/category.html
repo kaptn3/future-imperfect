@@ -27,7 +27,7 @@
     				<h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
     					<time class="published" datetime="2015-10-20">{{post.date | date: "%d-%m-%Y"}}</time>
     			</header>
-    			<a href="#" class="image"><img src="/images/{{post.icon}}.svg" alt="" /></a>
+    			<a href="#" class="image"><img src="{{site.baseurl}}/images/{{ post.icon }}.svg"/></a>
     		</article>		
     	</li>
     	{% endfor %}

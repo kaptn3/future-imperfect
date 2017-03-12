@@ -6,12 +6,12 @@ layout: default
   <article class="post">
     <header>
       <div class="title">
-      <span class="image left image-icon"><a href="/{{ post.icon }}"><img src="images/{{ post.icon }}.svg" style="border-radius: 100%; width: 4em;" alt="{{ post.icon }}"></a></span>
+      <span class="image left image-icon"><a href="/{{ post.icon }}"><img src="{{site.baseurl}}/images/{{ post.icon }}.svg" style="border-radius: 100%; width: 4em;" alt="{{ post.icon }}"></a></span>
         <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
       </div>
       <div class="meta">
         <time class="published" datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-        <a href="{{site.author.cv}}" class="author"><span class="name">{{ site.author.name }}</span><img src="{{site.author.avatar}}" alt="ViKapitoshka" /></a>
+        <a href="{{site.author.cv}}" class="author"><span class="name">{{ site.author.name }}</span><img src="{{site.author.avatar | prepend: site.baseurl}}" alt="ViKapitoshka" /></a>
       </div>
     </header>
     <p>{{ post.content | truncatewords: 30 }}</p>
@@ -20,7 +20,7 @@ layout: default
         <li><a href="{{ post.url | relative_url }}" class="button big">Читать Далее</a></li>
       </ul>
       <ul class="stats">
-        <li><a href="/{{post.link}}">{{post.category}}</a></li>
+        <li><a href="{{site.baseurl}}/ {{post.link}}">{{post.category}}</a></li>
       </ul>
     </footer>
   </article>
