@@ -1,16 +1,16 @@
 #Future Imperfect Theme on Jekyll
->by [ViKapitoshka](https://vikapitoshka.github.io)
+>by [ViKapitoshka](https://vikapitoshka.ru)
 
 ##Demo
 
-[Demo](https://vikapitoshka.github.io/jekyll-theme-future-imperfect)
+[Demo](https://blog.vikapitoshka.ru)
 
-![Future Imperfect Theme preview](readme_files/screen.png)
+![Future Imperfect Theme preview](https://cdn.rawgit.com/ViKapitoshka/blog/8429b80c/readme_files/screen.png)
 
 ## Installation 
 
-1. Download, clone or fork repo `git clone git@github.com:ViKapitoshka/jekyll-theme-future-imperfect.git`
-2. Enter the folder: `cd jekyll-theme-future-imperfect/` 
+1. Download, clone or fork repo `git clone git@github.com:ViKapitoshka/blog.git`
+2. Enter the folder: `cd blog/` 
 3. Install Ruby gems: `gem install jekyll bundler` if not already installed
 4. Start Jekyll server: `jekyll serve`
 
