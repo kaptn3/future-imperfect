@@ -6,7 +6,7 @@ layout: default
   <article class="post">
     <header>
       <div class="title">
-      <span class="image left image-icon"><a href="/{{ post.icon }}"><img src="{{site.baseurl}}/images/{{ post.icon }}.svg" style="width: 4em;" alt="{{ post.icon }}"></a></span>
+      <span class="image left image-icon"><a href="/{{ post.url | relative_url }}"><img src="{{site.baseurl}}/images/{{ post.icon }}.svg" style="width: 4em;" alt="{{ post.icon }}"></a></span>
         <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
       </div>
       <div class="meta">
@@ -14,7 +14,7 @@ layout: default
         <a href="{{site.author.cv}}" class="author"><span class="name">{{ site.author.name }}</span><img src="{{site.author.avatar | prepend: site.baseurl}}" alt="ViKapitoshka" /></a>
       </div>
     </header>
-    <p>{{ post.content | truncatewords: 30 }}</p>
+    <p>{{ post.content | truncatewords: 35 }}</p>
     <footer> 
       <ul class="actions">
         <li><a href="{{ post.url | relative_url }}" class="button big">Читать Далее</a></li>
