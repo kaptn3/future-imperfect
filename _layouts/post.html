@@ -8,14 +8,14 @@ layout: default
     </div>
     <div class="meta">
       <time class="published" datetime="{{ page.date }}">{{ page.date | date: "%b %-d, %Y" }}</time>
-      <a href="{{site.author.cv}}" class="author"><span class="name">{{ page.author }}</span><img src="{{site.author.avatar | prepend: site.baseurl}}" alt="ViKapitoshka" /></a>
+      <a href="{{site.author.cv}}" class="author"><span class="name">{{ site.author.name }}</span><img src="{{site.author.avatar | prepend: site.baseurl}}" alt="ViKapitoshka" /></a>
     </div>
   </header>
   {{ content }}
   
   <footer>
     <ul class="stats">
-      <li><a href="{{site.baseurl}}">Главная</a></li>
+      <li><a href="{{site.url}}">Главная</a></li>
     </ul>
   </footer>
 </article>

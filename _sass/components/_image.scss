@@ -47,12 +47,14 @@
 		}
 
 		&.featured {
+			max-width: 100%;
 			display: block;
 			margin: 0 0 _size(section-spacing) 0;
-			width: 100%;
+			border: 1px solid #ddd;
+			border-radius: 4px;
 
 			img {
-				width: 100%;
+				max-width: 100%;
 			}
 
 			@include breakpoint(small) {

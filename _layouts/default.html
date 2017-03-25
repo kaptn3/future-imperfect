@@ -33,6 +33,16 @@
       <script src="{{"/assets/js/skel.min.js" | prepend: site.baseurl}}"></script>
       <script src="{{"/assets/js/util.js" | prepend: site.baseurl}}"></script>
       <!--[if lte IE 8]><script src="{{"/assets/js/ie/respond.min.js" | prepend: site.baseurl}}"></script><![endif]-->
-      <script src="https://cdn.rawgit.com/ViKapitoshka/jekyll-theme-future-imperfect/cb080feb/assets/js/main.js"></script>
+      <script src="//cdn.rawgit.com/ViKapitoshka/blog/9f59a9fe/assets/js/main.js"></script>
+      <script type="text/javascript">
+        $(document).ready( function() {
+          var c_host = document.location.host.replace(/www\./, '');
+          $(document.body).on('click', 'a', function() {
+            if (this.href && this.href.indexOf(c_host) == -1) {
+              $(this).attr('target', '_blank');
+            }
+          });
+        });
+      </script>
 
 </html>

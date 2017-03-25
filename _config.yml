@@ -13,22 +13,22 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ViKapitoshka
+title: Viktoriya Kapitonenko
 description: > # this means to ignore newlines until "baseurl:"
   Блог для сохранения информации, полезной лично для меня, но которую обычно забываю.<br> 
-  Сайт с открытым исходным кодом размещен на <a href="#">github</a>.<br>
+  Сайт с открытым исходным кодом размещен на <a href="github.com/ViKapitoshka">github</a>.<br>
   Патчи, предложения и комментарии приветствуются.<br>
   Узнать об авторе можно по ссылке.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://blog.vikapitoshka.ru" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 author:
-  name: 'ViKapitoshka'
-  cv: 'https://vikapitoshka.github.io'
+  name: 'Kapitonenko'
+  cv: 'https://vikapitoshka.ru'
   avatar: '/images/avatar.jpeg'
   github_username:  ViKapitoshka  
-  email: kapitonenko.vick@ya.ru
+  email: vika@kaptn.ru
   vk_id: id201664979
   telegram_name: vikapitoshka 
   logo: '/images/logo.svg'
