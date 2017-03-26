@@ -6,6 +6,13 @@
 
 /* Post */
 
+	.hidden{
+		opacity:0;
+	}
+	.visible{
+		opacity:1;
+	}
+	
 	.post {
 		@include padding(_size(section-spacing), _size(section-spacing));
 		background: _palette(bg);
