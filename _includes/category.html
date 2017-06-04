@@ -25,7 +25,7 @@
     		<article>
     			<header>
     				<h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
-    					<time class="published" datetime="2015-10-20">{{post.date | date: "%d-%m-%Y"}}</time>
+    					<time class="published" datetime="2015-10-20">{{post.date | date: "%d %b %Y %R"}}</time>
     			</header>
     			<a href="{{post.url | relative_url}}" class="image"><img src="{{site.baseurl}}/images/{{ post.icon }}.svg"/></a>
     		</article>		
