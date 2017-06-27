@@ -14,7 +14,12 @@ layout: default
         <a href="{{site.author.cv}}" class="author"><span class="name">V.{{ site.author.last_name }}</span><img src="{{site.author.avatar | prepend: site.baseurl}}" alt="VKapitonenko" /></a>
       </div>
     </header>
-    <p>{{ post.content | truncatewords: 35 }}</p>
+    {% if post.image %}
+      <a href="/{{ post.url | relative_url }}" class="image featured"><img src="/post-img/{{ post.link }}/{{ post.image }}" alt=""></a>
+    {% endif %}
+    {% if post.preview != 0 %}
+      <p>{{ post.content | truncatewords: 35 }}</p>
+    {% endif %}
     <footer> 
       <ul class="actions">
         <li><a href="{{ post.url | relative_url }}" class="button big">Читать Далее</a></li>
