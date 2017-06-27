@@ -1,11 +1,12 @@
-#Future Imperfect Theme on Jekyll
->by [ViKapitoshka](https://kaptn.ru)
+# Future Imperfect Theme on Jekyll
+>by [Kapitonenko](https://kaptn.ru)
 
-##Demo
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badge/)
 
-[Demo](https://blog.kaptn.ru)
+## [Demo](https://blog.kaptn.ru)
 
-![Future Imperfect Theme preview](https://cdn.rawgit.com/ViKapitoshka/blog/8429b80c/readme_files/screen.png)
+![Future Imperfect Theme preview](https://cdn.rawgit.com/ViKapitoshka/blog/4ccc6d6a/readme_files/screen.png)
 
 ## Installation 
 
