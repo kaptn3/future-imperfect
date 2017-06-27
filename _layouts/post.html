@@ -5,17 +5,19 @@ layout: default
   <header>
     <div class="title">
       <h2>{{ page.title | escape }}</h2>
+      <p><a href="//github.com/ViKapitoshka/blog/edit/master/{{ page.path }}" class="icon fa-edit">Редактировать на GitHub</a></p>
     </div>
     <div class="meta">
       <time class="published" datetime="{{ page.date }}">{{ page.date | date: "%d %b %Y %R" }}</time>
-      <a href="{{site.author.cv}}" class="author"><span class="name">V.{{ site.author.last_name }}</span><img src="{{site.author.avatar | prepend: site.baseurl}}" alt="ViKapitoshka" /></a>
+      <a href="{{ site.author.cv }}" class="author"><span class="name">V.{{ site.author.last_name }}</span><img src="{{ site.author.avatar | prepend: site.baseurl }}" alt="ViKapitoshka" /></a>
     </div>
   </header>
   {{ content }}
   
   <footer>
     <ul class="stats">
-      <li><a href="{{site.url}}">Главная</a></li>
+      <li><a href="{{ site.url }}" class="icon fa-folder">Главная</a></li>
+      <li><a href="//github.com/ViKapitoshka/blog/edit/master/{{ page.path }}" class="icon fa-edit">Edit</a></li>
     </ul>
   </footer>
 </article>
