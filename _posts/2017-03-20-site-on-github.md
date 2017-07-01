@@ -2,9 +2,8 @@
 layout: post
 title:  "Привязка домена к репозиторию с GitHub-pages"
 date:   2017-03-20 17:00:00 +0300
-category: [Life]
+category: life
 icon: www
-link: life
 keywords: github, домен, сайт, dns-настройка
 ---
 <p>Данный цикл статей посвящён созданию сайта на <a href="//github.com">GitHub</a> и его оптимизации.</p>

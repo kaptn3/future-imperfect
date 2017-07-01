@@ -15,7 +15,7 @@ layout: default
       </div>
     </header>
     {% if post.image %}
-      <a href="{{ post.url | relative_url }}" class="image featured"><img src="/post-img/{{ post.link }}/{{ post.image }}" alt="{{ post.title }}"></a>
+      <a href="{{ post.url | relative_url }}" class="image featured"><img src="/post-img/{{ post.category }}/{{ post.image }}" alt="{{ post.title }}"></a>
     {% endif %}
     {% if post.preview != 0 %}
       <p>{{ post.content | truncatewords: 35 }}</p>
@@ -26,7 +26,7 @@ layout: default
       </ul>
       <ul class="stats">
         <li><a href="//github.com/ViKapitoshka/blog/edit/master/{{ post.path }}" class="icon fa-edit">Edit</a></li>
-        <li><a href="{{ site.baseurl }}/{{ post.link }}" class="icon fa-folder">{{post.category}}</a></li>        
+        <li><a href="{{ site.baseurl }}/{{ post.category }}" class="icon fa-folder">{{post.category}}</a></li>        
       </ul>
     </footer>
   </article>

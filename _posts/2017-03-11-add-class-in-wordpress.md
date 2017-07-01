@@ -2,9 +2,8 @@
 layout: post
 title:  "Добавление класса к изображениям WordPress"
 date:   2017-03-11 18:11:00 +0300
-category: [Life]
+category: life
 icon: wordpress
-link: life
 keywords: wordpress, картинки, классы
 ---
 В WordPress картинки, которые добавляются редактором в статью, вставляются без классов. Чтобы это исправить мы напишем функцию, которая к каждой картинке добавит класс, например, <code>.img-responsive</code>. В файл <code>function.php</code>, который находится в папке <code>wp-content</code>, нужно прописать следующее:

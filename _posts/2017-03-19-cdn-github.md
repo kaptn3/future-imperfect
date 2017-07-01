@@ -2,9 +2,8 @@
 layout: post
 title:  "Правильное подключение скриптов с GitHub на сайт"
 date:   2017-03-19 14:00:00 +0300
-category: [Life]
+category: life
 icon: github
-link: life
 keywords: github, cdn
 ---
 <p>Недавно столкнулась с проблемой работы скриптов, находящиеся в репозитории GitHub. Например, если подключить <a href="//github.com/ViKapitoshka/blog/blob/master/assets/js/main.js">этот</a> скрипт напрямую, то файл изменится до неузнаваемости и, конечно же, не будет работать. Почему так происходит?</p>

@@ -2,9 +2,8 @@
 layout: post
 title:  "Codecademy на русском."
 date:   2017-06-03 23:00:00 +0300
-category: [Codecademy]
+category: codecademy
 icon: www
-link: codecademy
 keywords: codecademy, перевод, курс
 image: 2.png
 ---

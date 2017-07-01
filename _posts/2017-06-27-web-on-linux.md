@@ -2,17 +2,16 @@
 layout: post
 title:  "Установки на Linux для Web-разработки. Заметки"
 date:   2017-06-27 16:00
-category: [Life]
+category: life
 icon: linux
-link: life
 keywords: linux, web-разработка, web, программы
 image: 9.jpg
 preview: 0
 ---
-### Небольшое примечание
+## Небольшое примечание
 Перед каждой установкой программы желательно обновлять пакеты:  
 `sudo apt-get update`
-### Редакторы
+## Редакторы
 - Установим два редактора:  
 Visual Studio Code:  
 ```
@@ -25,18 +24,18 @@ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo apt-get install sublime-text-installer
 ```
 
-### Git
+## Git
 - Устанавливаем git, если не установлен и генирируем ssh-ключ для работы с репозиторием:  
 ```
 ssh-keygen -t rsa -b 4096  
 cat ~/.ssh/id_rsa.pub
-```  
+```
 Ключ копируем и вставляем [сюда](https://github.com/settings/keys).  
 И запускаем ssh-agent:  
 `eval "$(ssh-agent -s)"`  
 Теперь можно работать с репозиториями.
 
-### Сервер
+## Сервер
 Для сервера будем использовать стек LEMP (Linux, Nginx, MySQL и PHP).
 - Установим Nginx:  
 `sudo apt-get install nginx`  
@@ -68,7 +67,7 @@ location ~ \.php$ {
 location ~ /\.ht {
     deny all;
 }
-```  
+```
 После проверим файл на наличии ошибок:  
 `nginx -t`  
 и перезагрузим nginx:  
@@ -95,17 +94,17 @@ define('DB_NAME', 'wordpress');
 define('DB_USER', 'user');
 define('DB_PASSWORD', 'testpass');
 define('DB_HOST', 'localhost');
-```  
+```
 Открываем в браузере wp-activate.php и следуем по инструкции.
 
-### Sass
+## Sass
 - Установим Ruby, а далее и Sass:  
 ```
 sudo apt-get install ruby
 sudo gem install sass
 ```
 
-### Gulp 
+## Gulp 
 - Для начала нужно устрановить node.js:  
 `sudo apt-get install nodejs`  
 На всякий случай, можно проверить версию:  
@@ -130,7 +129,7 @@ gulp.task('hello', function() {
 `gulp hello`  
 В результате должны увидеть фразу "Hello, World!".
 
-### Jekyll
+## Jekyll
 - Устанавливаем павкет ruby и ruby-dev для разработки:  
 `sudo apt-get install ruby ruby-dev`  
 - Далее устанавливаем Jekyll и Bundler:  
@@ -142,6 +141,12 @@ gulp.task('hello', function() {
 `jekyll new название_проекта`   
 - И также переходим в папку "название_проекта" и запускаем сервер.
 
-
-
-
+## React JS
+Для работы с реактом, должны быть [установлены](#gulp) NodeJS и npm
+- Установим create-react-app:  
+`sudo npm install -g create-react-app`  
+- Инициализируем проект:  
+`create-react-app my-app`  
+- Переходим в папку my-app и запускаем проект в режиме разработки:  
+`npm start`  
+Суть в том, что страница [localhost:3000](//localhost:3000) будет перезагружаться как только будут произведены какие-либо изменения в файлах.
