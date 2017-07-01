@@ -20,6 +20,15 @@ layout: default
       <li><a href="//github.com/ViKapitoshka/blog/edit/master/{{ page.path }}" class="icon fa-edit">Edit</a></li>
     </ul>
   </footer>
+  <ul class="actions pagination">
+    {% if page.previous.url %}
+		  <li><a href="{{page.previous.url}}" class="button big previous">Previous Page</a></li>
+    {% endif %}
+    {% if page.next.url %}
+		  <li><a href="{{page.next.url}}" class="button big next">Next Page</a></li>
+    {% endif %}
+	</ul>
+</div>
 </article>
 
 
