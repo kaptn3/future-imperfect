@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="post">
-  <header>
+  <header> 
     <div class="title">
       <h2>{{ page.title | escape }}</h2>
       <p><a href="//github.com/ViKapitoshka/blog/edit/master/{{ page.path }}" class="icon fa-edit">Редактировать на GitHub</a></p>
@@ -20,16 +20,31 @@ layout: default
       <li><a href="//github.com/ViKapitoshka/blog/edit/master/{{ page.path }}" class="icon fa-edit">Edit</a></li>
     </ul>
   </footer>
-  <ul class="actions pagination">
-    {% if page.previous.url %}
-		  <li><a href="{{page.previous.url}}" class="button big previous">Previous Page</a></li>
-    {% endif %}
-    {% if page.next.url %}
-		  <li><a href="{{page.next.url}}" class="button big next">Next Page</a></li>
-    {% endif %}
-	</ul>
+  <form method="post" action="#">
+    <div class="" style="float: left; width: 70px;">
+      <input type="text" name="demo-name" id="enter" value="100" placeholder="Сумма" />
+    </div>
+    <a id="go_donate" style="height: 44px" href="https://money.yandex.ru/to/410013162271067/" class="button">Автору на чай</a>
+  </form>
 </div>
 </article>
-
+<ul class="actions pagination">
+  {% if page.previous.url %}
+    <li><a href="{{page.previous.url}}" class="button big previous">Previous Page</a></li>
+  {% endif %}
+  {% if page.next.url %}
+    <li><a href="{{page.next.url}}" class="button big next">Next Page</a></li>
+  {% endif %}
+</ul>
+<script language="JavaScript">
+  $(function() {
+    var link = $('#go_donate');
+    var linkDefaultHref = link.attr("href");
+    link.attr("href", linkDefaultHref + $('#enter').attr("value"));
+    $('#enter').on('keyup', function() {              
+      link.attr("href", linkDefaultHref + $(this).val());
+    });
+  });
+</script>
 
 
