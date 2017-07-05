@@ -34,24 +34,9 @@
       <!--[if lte IE 8]><script src="{{"/assets/js/ie/respond.min.js" | prepend: site.baseurl}}"></script><![endif]-->
       <script src="{{"/assets/js/main.js" | prepend: site.baseurl}}"></script>
       <script src="{{"/assets/js/viewportchecker.js" | prepend: site.baseurl}}"></script>
-      <!--script src="{{"/assets/js/transition.js" | prepend: site.baseurl}}"></script-->
-      <script type="text/javascript">
-        $(document).ready( function() {
-          var c_host = document.location.host.replace(/www\./, '');
-          $(document.body).on('click', 'a', function() {
-            if (this.href && this.href.indexOf(c_host) == -1) {
-              $(this).attr('target', '_blank');
-            }
-          });
-        });
-      </script>
-      <script>
-        jQuery(document).ready(function() {
-          jQuery('.post').addClass("hidden").viewportChecker({
-            classToAdd: 'visible animated fadeIn',offset: 100
-          });
-        });
-      </script>
+      <script src="{{"/assets/js/transition.js" | prepend: site.baseurl}}"></script>
+      <script src="{{"/assets/js/targetblank.js" | prepend: site.baseurl}}"></script>
+      <script src="{{"/assets/js/animated.js" | prepend: site.baseurl}}"></script>
 
       {% include yandex-metrika.html %}
 

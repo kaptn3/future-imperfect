@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("a[href*=#]").on("click", function(e){
+	$("article a[href*=#]").on("click", function(e){
 		if ($("#header").height()>50) {
 			var anchor = $(this);
 			$('html, body').stop().animate({
