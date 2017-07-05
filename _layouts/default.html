@@ -7,7 +7,11 @@
     <body class="single">
   {% else %}
     <body>
-  {% endif %}  
+  {% endif %}
+
+  <div class="toTop">
+    <li class="fa fa-angle-up"></li>  
+  </div>  
 
 
     <div id="wrapper">
@@ -37,6 +41,7 @@
       <script src="{{"/assets/js/transition.js" | prepend: site.baseurl}}"></script>
       <script src="{{"/assets/js/targetblank.js" | prepend: site.baseurl}}"></script>
       <script src="{{"/assets/js/animated.js" | prepend: site.baseurl}}"></script>
+      <script src="{{"/assets/js/scrollTop.js" | prepend: site.baseurl}}"></script>
 
       {% include yandex-metrika.html %}
 
