@@ -12,6 +12,7 @@
 2. [Usage](#usage)
 3. [Features](#features)
     - [Categories](#categories)
+    - [Comments](#comments)
     - [Icons](#icons)
     - [Post Image](#post-image)
     - [Preview](#preview)
@@ -38,6 +39,9 @@ If you're completely new to Jekyll, I recommend checking out the documentation a
 In blog page, we categorize posts into several categories by url, all category pages use same template html file - `_includes/category.html`. Links of category in menu is in `_data.links.yml`.
 
 For example: URL is `localhost:4000/codeacademy`. In `_data.links.yml` we define this category named Codecademy, so in `_includes/category.html` we get this URL(/codecademy/) and change it to my category(Сodecademy), then this page are posts about Python.
+
+### Comments
+I use [HyperComments](http://hypercomments.com) instead of other tool, Disqus, so it's slower and don't allows to anonymously send messages. Code of comment is in `_includes/comments` and included in every post.
 
 ### Icons
 For categories I use svg-icons in `images`. Еhe icon is automatically assigned to the post by its category. The icon name must be `category.svg`.
