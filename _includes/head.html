@@ -7,10 +7,11 @@
   {% endif %}
   <meta name="robots" content="all"/>
   <meta name="author" content="{{ site.author.name }}">
-
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
+  {% capture blogtitle %}{{page.title}}{%endcapture%}
+  <title>{% if blogtitle %}{{ blogtitle | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="shortcut icon" href="{{ "/images/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">

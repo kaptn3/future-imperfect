@@ -36,11 +36,6 @@ author:
 
 # Build settings
 markdown: kramdown
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
 
 permalink: /:categories/:year/:title.html
 
