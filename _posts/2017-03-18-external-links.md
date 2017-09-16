@@ -2,7 +2,7 @@
 layout: post
 title:  "Открытие внешних ссылок в новой вкладке"
 date:   2017-03-18 14:00:00 +0300
-category: jquery
+category: javascript
 icon: jquery
 keywords: jquery, внешние ссылки
 ---
