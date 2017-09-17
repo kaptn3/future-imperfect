@@ -77,12 +77,14 @@ There may be merge conflicts, so be sure to fix the files that git lists if they
 ## Thanks to the following
 [Jekyll](http://jekyllrb.com/)  
 [HTML5Up](https://html5up.net/)  
-[Font Awesome](http://fontawesome.io/icons/)
+[Font Awesome](http://fontawesome.io/icons/)  
+[HyperComments](http://hypercomments.com)
 
 ## Donate
-If this project let you enjoy your blog time, you can give me a cup of coffee :)
+In `includes/donate.html` you'll see form for donation, includes in every post.  
+Also if this project let you enjoy your blog time, you can give me a cup of coffee :)
 
-[Donate =)](https://money.yandex.ru/to/410013162271067/100)
+[Donate =)](https://money.yandex.ru/to/410013162271067/10)
 
 ## Copyright and license
 The theme is taken Future Imperfect Theme from [HTML5 UP](https://html5up.net).

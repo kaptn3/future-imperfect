@@ -20,14 +20,9 @@ layout: default
       <li><a href="//github.com/ViKapitoshka/blog/edit/master/{{ page.path }}" class="icon fa-edit">Edit</a></li>
     </ul>
   </footer>
-  <form method="post" action="#">
-    <div class="" style="float: left; width: 70px;">
-      <input type="text" name="demo-name" id="enter" value="100" placeholder="Сумма" />
-    </div>
-    <ul class="actions">
-      <li><a id="go_donate" style="height: 44px" href="https://money.yandex.ru/to/410013162271067/" class="button fit">Автору на чай</a></li>
-    </ul>
-  </form>
+
+  {% include donate.html %}
+  
 </div>
 </article>
 <ul class="actions pagination">
@@ -38,16 +33,7 @@ layout: default
     <li><a href="{{page.next.url}}" class="button big next">Next Page</a></li>
   {% endif %}
 </ul>
-<script language="JavaScript">
-  $(function() {
-    var link = $('#go_donate');
-    var linkDefaultHref = link.attr("href");
-    link.attr("href", linkDefaultHref + $('#enter').attr("value"));
-    $('#enter').on('keyup', function() {              
-      link.attr("href", linkDefaultHref + $(this).val());
-    });
-  });
-</script>
+
 
 {%include comments.html %}
 
