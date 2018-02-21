@@ -24,8 +24,9 @@
     - [Web analytics](#web-analytics)
 5. [Upgrading Theme](#upgrading-theme)
 6. [Thanks to the following](#thanks-to-the-following)
-7. [Donate](#donate)
-8. [Copyright and license](#copyright-and-license)
+7. [Todo](#todo)
+8. [Donate](#donate)
+9. [Copyright and license](#copyright-and-license)
 
 ## Installation 
 1. Download, clone or fork repo `git clone git@github.com:vikapitoshka/blog.git`
@@ -116,6 +117,12 @@ There may be merge conflicts, so be sure to fix the files that git lists if they
 [HTML5Up](https://html5up.net/)  
 [Font Awesome](http://fontawesome.io/icons/)  
 [HyperComments](http://hypercomments.com)
+
+## TODO
+- [ ] Add 404 page
+- [ ] Search system
+- [ ] Add fontawesome 5
+- [ ] Add paginator
 
 ## Donate
 In `includes/donate.html` you'll see form for donation, includes in every post.  
