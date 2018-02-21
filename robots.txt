@@ -1,4 +1,5 @@
+---
+title: robots
+---
 User-agent: *
-Disallow:
-Sitemap: http://blog.kaptn.ru/sitemap.xml
-Host: https://blog.kaptn.ru
+Sitemap: <{{site.url}}/sitemap.xml>
