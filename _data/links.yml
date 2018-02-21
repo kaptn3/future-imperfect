@@ -1,9 +1,6 @@
 # blog page sections
-- name: JavaScript
-  href: '/javascript/'
+- name: category1
+  href: '/category1/'
 
-- name: Life
-  href: '/life/'
-
-- name: Codecademy
-  href: '/codecademy/'
+- name: category2
+  href: '/category2/'
