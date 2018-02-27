@@ -59,7 +59,7 @@ preview: 0
 ```
 
 ### Category page
-If you want to add a page of category you have to create folder with name of category and file `index.html`, which should contain the following:
+If you want to add a page of category you have to create folder with name of category and file `index.html`, which should contain the following:  
 ```
 ---
 layout: default
@@ -121,7 +121,7 @@ There may be merge conflicts, so be sure to fix the files that git lists if they
 ## TODO
 - [ ] Add 404 page
 - [ ] Search system
-- [ ] Add fontawesome 5
+- [x] Add fontawesome 5
 - [ ] Add paginator
 
 ## Donate
