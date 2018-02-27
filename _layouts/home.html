@@ -25,8 +25,8 @@ layout: default
         <li><a href="{{ post.url | relative_url }}" class="button big">Читать Далее</a></li>
       </ul>
       <ul class="stats">
-        <li><a href="//github.com/ViKapitoshka/blog/edit/master/{{ post.path }}" class="icon fa-edit">Edit</a></li>
-        <li><a href="{{ site.baseurl }}/{{ post.category }}" class="icon fa-folder">{{post.category}}</a></li>        
+        <li><a class="icon" href="{{ site.baseurl }}/{{ post.category }}"><i class="fas fa-fw fa-folder"></i> {{ post.category }}</a></li>
+        <li><a href="//github.com/ViKapitoshka/blog/edit/master/{{ page.path }}" class="icon"><i class="fas fa-fw fa-edit"></i> Edit</a></li>
       </ul>
     </footer>
   </article>

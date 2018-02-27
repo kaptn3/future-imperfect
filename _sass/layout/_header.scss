@@ -110,8 +110,11 @@
 						color: _palette(fg-light);
 						overflow: hidden;
 						position: relative;
-						text-indent: 4em;
 						width: 4em;
+
+						.fa-bars {
+							width: 100%;
+						}
 
 						&:before {
 							display: block;
