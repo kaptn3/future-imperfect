@@ -109,7 +109,7 @@ If `git remote -v` doesn't have an upstream listed, you can do the following to 
 `git remote add upstream https://github.com/vikapitoshka/blog.git`
 Pull in the latest changes
 
-`git pull upstream gh-pages`
+`git pull upstream master`
 There may be merge conflicts, so be sure to fix the files that git lists if they occur. That's it!
 
 ## Thanks to the following
