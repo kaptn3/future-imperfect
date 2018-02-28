@@ -8,6 +8,7 @@
   <meta name="robots" content="all"/>
   <meta name="author" content="{{ site.author.name }}">
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta property="og:image" content="{% if page.title %}{% else %}{{"/images/avatar.jpeg" | prepend: site.baseurl}}{% endif %}">
 
   {% capture blogtitle %}{{page.title}}{%endcapture%}
   <title>{% if page.title %}{{ page.title }}{% else %}Главная | {{ site.title }}{% endif %}</title>
