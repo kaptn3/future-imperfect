@@ -2,11 +2,11 @@
 >by [Kapitonenko](https://kaptn.ru)
 
 <https://blog.kaptn.ru> - demo  
-<https://github.com/vikapitoshka/blog/> - repository
+<https://github.com/kaptn3/blog/> - repository
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badge/)
-![Future Imperfect Theme preview](https://cdn.rawgit.com/ViKapitoshka/blog/4ccc6d6a/readme_files/screen.png)
+![Future Imperfect Theme preview](https://cdn.rawgit.com/kaptn3/blog/4ccc6d6a/readme_files/screen.png)
 
 1. [Installation](#installation)
 2. [Usage](#usage)
@@ -29,7 +29,7 @@
 9. [Copyright and license](#copyright-and-license)
 
 ## Installation 
-1. Download, clone or fork repo `git clone git@github.com:vikapitoshka/blog.git`
+1. Download, clone or fork repo `git clone git@github.com:kaptn3/blog.git`
 2. Enter the folder: `cd blog/` 
 3. Start Jekyll server: `jekyll s`
 
@@ -38,7 +38,7 @@ Access, [localhost:4000](http://localhost:4000)
 ## Usage
 If you're completely new to Jekyll, I recommend checking out the documentation at <http://jekyllrb.com> or there's a tutorial by Smashing Magazine.
 
-If you have any questions please ask me at [GitHub Issues](https://github.com/vikapitoshka/blog/issues).
+If you have any questions please ask me at [GitHub Issues](https://github.com/kaptn3/blog/issues).
 
 ## Content management
 ### Template
@@ -70,7 +70,7 @@ permalink: /category1/
 {% include category.html %}
 ```
 
-You can see example in [here](https://github.com/vikapitoshka/blog/blob/master/category1) or [here](https://github.com/vikapitoshka/blog/blob/master/category2).
+You can see example in [here](https://github.com/kaptn3/blog/blob/master/category1) or [here](https://github.com/kaptn3/blog/blob/master/category2).
 
 ## Features
 ### Categories
@@ -89,12 +89,12 @@ All images used in posts that are in `post-image` and its are categorized. For e
 
 ### Featured image
 You can specify the preview image for post in [YAML Front Matter](http://jekyllrb.com/docs/frontmatter/). In front matter called "image" to indicate the name of the image. The picture must be located in a category folder.    
-For example, we write post of category_name's category. In folder `post-img/category_name` put the preview image with the title "1.png" and in front matter write: `image: 1.png`. [Example](https://github.com/ViKapitoshka/blog/blob/master/_posts/2017-06-08-learn-git4.md).
+For example, we write post of category_name's category. In folder `post-img/category_name` put the preview image with the title "1.png" and in front matter write: `image: 1.png`. [Example](https://github.com/kaptn3/blog/blob/master/_posts/2017-06-08-learn-git4.md).
 
-Also, in front matter you can control the announcement of record post. By default, the announcement consists of 35 words. Writing in the front matter called "preview" the number 0, the announcement will not be displayed for this entry. [Example](https://github.com/ViKapitoshka/blog/blob/master/_posts/2017-06-08-learn-git4.md).
+Also, in front matter you can control the announcement of record post. By default, the announcement consists of 35 words. Writing in the front matter called "preview" the number 0, the announcement will not be displayed for this entry. [Example](https://github.com/kaptn3/blog/blob/master/_posts/2017-06-08-learn-git4.md).
 
 ### Edit link
-All posts can be edited by users through link: `github.com/vikapitoshka/blog/edit/master/{{ page.path }}` or `github.com/vikapitoshka/blog/edit/master/{{ post.path }}`. 
+All posts can be edited by users through link: `github.com/kaptn3/blog/edit/master/{{ page.path }}` or `github.com/kaptn3/blog/edit/master/{{ post.path }}`. 
 
 ### Web analytics
 I use [Yandex Metrika](https://metrika.yandex.ru) to do web analytics, you can choose either to realize it, just paste your code in `includes/analytics.html`.
@@ -106,7 +106,7 @@ Ensure there's an upstream remote
 
 If `git remote -v` doesn't have an upstream listed, you can do the following to add it:
 
-`git remote add upstream https://github.com/vikapitoshka/blog.git`
+`git remote add upstream https://github.com/kaptn3/blog.git`
 Pull in the latest changes
 
 `git pull upstream master`
