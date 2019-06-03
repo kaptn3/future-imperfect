@@ -1,26 +1,8 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: IT-блог
 description: > # this means to ignore newlines until "baseurl:"
-  Блог Виктории Капитоненко. Нужен для сохранения информации, полезной лично для меня, но которая обычно забывается.<br>
-  Сайт написан на Jekyll и использует GitHub Pages.<br>
-  Блог с открытым исходным кодом размещен на <a href="//github.com/ViKapitoshka/blog">github</a>.<br>
-  Патчи, предложения и комментарии приветствуются.<br>
+  Blog with theme Future Imperfect<br>
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.kaptn.ru" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://future-imperfect.kaptn.ru" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 author:
@@ -28,7 +10,7 @@ author:
   last_name: 'Kapitonenko'
   cv: '//kaptn.ru'
   avatar: '/images/avatar.jpeg'
-  github_username:  ViKapitoshka  
+  github_username:  kaptn3  
   email: vika@kaptn.ru
   vk_id: id201664979
   telegram_name: vikapitoshka 
