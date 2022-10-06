@@ -11,8 +11,8 @@
   <meta property="og:image" content="{% if page.title %}{% else %}{{"/images/avatar.jpeg" | prepend: site.baseurl}}{% endif %}">
 
   {% capture blogtitle %}{{page.title}}{%endcapture%}
-  <title>{% if page.title %}{{ page.title }}{% else %}Главная | {{ site.title }}{% endif %}</title>
-  
+  <title>{% if page.title %}{{ page.title }}{% else %}Welcome | {{ site.title }}{% endif %}</title>
+
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="shortcut icon" href="{{ "/images/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">

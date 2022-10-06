@@ -1,0 +1,171 @@
+I"�*<p><a href="https://blog.kaptn.ru">https://blog.kaptn.ru</a> - demo<br />
+<a href="https://github.com/vikapitoshka/blog/">https://github.com/vikapitoshka/blog/</a> - repository</p>
+
+<p><a href="https://opensource.org/licenses/mit-license.php"><img src="https://badges.frapsoft.com/os/mit/mit.svg?v=103" alt="MIT Licence" /></a>
+<a href="https://github.com/ellerbrock/open-source-badge/"><img src="https://badges.frapsoft.com/os/v1/open-source.png?v=103" alt="Open Source Love" /></a>
+<img src="https://cdn.rawgit.com/ViKapitoshka/blog/4ccc6d6a/readme_files/screen.png" alt="Future Imperfect Theme preview" /></p>
+
+<ol>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#content-management">Content management</a>
+    <ul>
+      <li><a href="#template">Template</a></li>
+      <li><a href="#example-of-post">Example of post</a></li>
+      <li><a href="#category-page">Category page</a></li>
+    </ul>
+  </li>
+  <li><a href="#features">Features</a>
+    <ul>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#comments">Comments</a></li>
+      <li><a href="#icons">Icons</a></li>
+      <li><a href="#post-image">Post Image</a></li>
+      <li><a href="#featured-image">Featured image</a></li>
+      <li><a href="#edit-link">Edit link</a></li>
+      <li><a href="#web-analytics">Web analytics</a></li>
+    </ul>
+  </li>
+  <li><a href="#upgrading-theme">Upgrading Theme</a></li>
+  <li><a href="#thanks-to-the-following">Thanks to the following</a></li>
+  <li><a href="#todo">Todo</a></li>
+  <li><a href="#donate">Donate</a></li>
+  <li><a href="#copyright-and-license">Copyright and license</a></li>
+</ol>
+
+<h2 id="installation">Installation</h2>
+<ol>
+  <li>Download, clone or fork repo <code class="language-plaintext highlighter-rouge">git clone git@github.com:vikapitoshka/blog.git</code></li>
+  <li>Enter the folder: <code class="language-plaintext highlighter-rouge">cd blog/</code></li>
+  <li>Start Jekyll server: <code class="language-plaintext highlighter-rouge">jekyll s</code></li>
+</ol>
+
+<p>Access, <a href="http://localhost:4000">localhost:4000</a></p>
+
+<h2 id="usage">Usage</h2>
+<p>If you’re completely new to Jekyll, I recommend checking out the documentation at <a href="http://jekyllrb.com">http://jekyllrb.com</a> or there’s a tutorial by Smashing Magazine.</p>
+
+<p>If you have any questions please ask me at <a href="https://github.com/vikapitoshka/blog/issues">GitHub Issues</a>.</p>
+
+<h2 id="content-management">Content management</h2>
+<h3 id="template">Template</h3>
+<p>Template of posts setting is in <code class="language-plaintext highlighter-rouge">_drafts/template.md</code>. <code class="language-plaintext highlighter-rouge">Layout</code> is always named <code class="language-plaintext highlighter-rouge">post</code>. <code class="language-plaintext highlighter-rouge">Title</code> is a title of post, writing in quotation marks. <code class="language-plaintext highlighter-rouge">Date</code> written in the following format: <code class="language-plaintext highlighter-rouge">yyyy-mm-dd hh:mm</code>. In <code class="language-plaintext highlighter-rouge">category</code> specifies one category. In <code class="language-plaintext highlighter-rouge">icon</code> written the name of icon (its in the folder <code class="language-plaintext highlighter-rouge">images</code>). In <code class="language-plaintext highlighter-rouge">tags</code> is possible to write multiple tags using a comma. In <code class="language-plaintext highlighter-rouge">image</code> specify the path to image preview (can not fill). And in <code class="language-plaintext highlighter-rouge">preview</code> you can write <code class="language-plaintext highlighter-rouge">0</code> to on the main page didn’t show the announcement of the post.</p>
+
+<p>More details about all features and setting can be view on <a href="#features">here</a>.</p>
+
+<h3 id="example-of-post">Example of post</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>layout: post
+title:  "Lorem"
+date:   2017-06-04 00:00
+category: category_name
+icon: git
+keywords: tag1, tag2
+image: 1.png
+preview: 0
+</code></pre></div></div>
+
+<h3 id="category-page">Category page</h3>
+<p>If you want to add a page of category you have to create folder with name of category and file <code class="language-plaintext highlighter-rouge">index.html</code>, which should contain the following:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: default
+title: Category1
+permalink: /category1/ 
+---
+
+&lt;!-- categories.html --&gt;
+
+ &lt;!-- category - переменная из адреса сайта --&gt;
+    &lt;header&gt;
+        &lt;h1 class="cat-header" style="text-align: center;"&gt;category22018readme.html&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;style&gt;
+        .cat-header:after {
+            background: #2ebaae;
+            content: '';
+            display: block;
+            height: 2px;
+            margin: 0.75em auto 0 auto;
+            position: relative;
+            width: 4em;
+            }
+    &lt;/style&gt;
+
+
+&lt;section&gt;
+    &lt;ul class="posts"&gt;
+    	
+    &lt;/ul&gt;
+&lt;/section&gt;
+
+</code></pre></div></div>
+
+<p>You can see example in <a href="https://github.com/vikapitoshka/blog/blob/master/category1">here</a> or <a href="https://github.com/vikapitoshka/blog/blob/master/category2">here</a>.</p>
+
+<h2 id="features">Features</h2>
+<h3 id="categories">Categories</h3>
+<p>In blog page, we categorize posts into several categories by url, all category pages use same template html file - <code class="language-plaintext highlighter-rouge">_includes/category.html</code>. Links of category in menu is in <code class="language-plaintext highlighter-rouge">_data.links.yml</code>.</p>
+
+<p>For example: URL is <code class="language-plaintext highlighter-rouge">localhost:4000/category1</code>. In <code class="language-plaintext highlighter-rouge">_data.links.yml</code> we define this category named category1, so in <code class="language-plaintext highlighter-rouge">_includes/category.html</code> we get this URL(/category1/) and change it to my category(category1), then this page are posts about category1.</p>
+
+<h3 id="comments">Comments</h3>
+<p>I use <a href="http://hypercomments.com">HyperComments</a> instead of other tool, Disqus, so it’s slower and don’t allows to anonymously send messages. Code of comment is in <code class="language-plaintext highlighter-rouge">_includes/comments</code> and it included in every post.</p>
+
+<h3 id="icons">Icons</h3>
+<p>For categories I use svg-icons in <code class="language-plaintext highlighter-rouge">images</code>. Еhe icon is automatically assigned to the post by its category. The icon name must be <code class="language-plaintext highlighter-rouge">category_name.svg</code>.</p>
+
+<h3 id="post-image">Post Image</h3>
+<p>All images used in posts that are in <code class="language-plaintext highlighter-rouge">post-image</code> and its are categorized. For example, images in post of category1’s category is in <code class="language-plaintext highlighter-rouge">post-img/category1</code>.</p>
+
+<h3 id="featured-image">Featured image</h3>
+<p>You can specify the preview image for post in <a href="http://jekyllrb.com/docs/frontmatter/">YAML Front Matter</a>. In front matter called “image” to indicate the name of the image. The picture must be located in a category folder.  <br />
+For example, we write post of category_name’s category. In folder <code class="language-plaintext highlighter-rouge">post-img/category_name</code> put the preview image with the title “1.png” and in front matter write: <code class="language-plaintext highlighter-rouge">image: 1.png</code>. <a href="https://github.com/ViKapitoshka/blog/blob/master/_posts/2017-06-08-learn-git4.md">Example</a>.</p>
+
+<p>Also, in front matter you can control the announcement of record post. By default, the announcement consists of 35 words. Writing in the front matter called “preview” the number 0, the announcement will not be displayed for this entry. <a href="https://github.com/ViKapitoshka/blog/blob/master/_posts/2017-06-08-learn-git4.md">Example</a>.</p>
+
+<h3 id="edit-link">Edit link</h3>
+<p>All posts can be edited by users through link: <code class="language-plaintext highlighter-rouge">github.com/vikapitoshka/blog/edit/master/_posts/2018-02-20-readme.md</code> or <code class="language-plaintext highlighter-rouge">github.com/vikapitoshka/blog/edit/master/</code>.</p>
+
+<h3 id="web-analytics">Web analytics</h3>
+<p>I use <a href="https://metrika.yandex.ru">Yandex Metrika</a> to do web analytics, you can choose either to realize it, just paste your code in <code class="language-plaintext highlighter-rouge">includes/analytics.html</code>.</p>
+
+<h2 id="upgrading-theme">Upgrading Theme</h2>
+<p>Blog is always being improved by its users, so sometimes one may need to upgrade.</p>
+
+<p>Ensure there’s an upstream remote</p>
+
+<p>If <code class="language-plaintext highlighter-rouge">git remote -v</code> doesn’t have an upstream listed, you can do the following to add it:</p>
+
+<p><code class="language-plaintext highlighter-rouge">git remote add upstream https://github.com/vikapitoshka/blog.git</code>
+Pull in the latest changes</p>
+
+<p><code class="language-plaintext highlighter-rouge">git pull upstream gh-pages</code>
+There may be merge conflicts, so be sure to fix the files that git lists if they occur. That’s it!</p>
+
+<h2 id="thanks-to-the-following">Thanks to the following</h2>
+<p><a href="http://jekyllrb.com/">Jekyll</a><br />
+<a href="https://html5up.net/">HTML5Up</a><br />
+<a href="http://fontawesome.io/icons/">Font Awesome</a><br />
+<a href="http://hypercomments.com">HyperComments</a></p>
+
+<h2 id="todo">TODO</h2>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add 404 page</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Search system</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Add fontawesome 5</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add paginator</li>
+</ul>
+
+<h2 id="donate">Donate</h2>
+<p>In <code class="language-plaintext highlighter-rouge">includes/donate.html</code> you’ll see form for donation, includes in every post.<br />
+Also if this project let you enjoy your blog time, you can give me a cup of coffee :)</p>
+
+<p><a href="https://money.yandex.ru/to/410013162271067/10">Donate =)</a></p>
+
+<h2 id="copyright-and-license">Copyright and license</h2>
+<p>The theme is taken Future Imperfect Theme from <a href="https://html5up.net">HTML5 UP</a>.</p>
+
+<p>It is under <a href="/LICENSE">the MIT license</a>.</p>
+
+<p>Enjoy :yum:</p>
+:ET

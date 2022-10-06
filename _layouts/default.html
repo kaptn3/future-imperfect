@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "ru" }}">
+<html lang="{{ page.lang | default: site.lang | default: "ko" }}">
 
   {% include head.html %}
 
@@ -10,8 +10,8 @@
   {% endif %}
 
   <div class="toTop">
-    <i class="fas fa-angle-up"></i>  
-  </div>  
+    <i class="fas fa-angle-up"></i>
+  </div>
 
 
     <div id="wrapper">
@@ -20,14 +20,14 @@
 
     <main class="page-content" aria-label="Content">
       <div id="main">
-        {{ content }}        
+        {{ content }}
       </div>
     </main>
     {% if page.title %}
      {% include footer.html %}
     {% else %}
       {% include index-footer.html %}
-    {% endif %}    
+    {% endif %}
     </div>
 
   </body>
